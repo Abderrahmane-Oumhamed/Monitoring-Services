@@ -1,0 +1,506 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="321dp"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <com.github.mikephil.charting.charts.LineChart
+                android:id="@+id/lineChart"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="240dp"
+                android:layout_height="match_parent">
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:text="Mémoire total:"
+                            android:textColor="@color/teal_700"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/tv_memTotal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:text="MemTotal"
+                            android:textColor="@color/teal_700"
+                            android:textSize="12sp" />
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:text="Mémoire utilisé:"
+                            android:textColor="@color/teal_700"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/tv_memUtilized"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:text="MemUtilized"
+                            android:textColor="@color/teal_700"
+                            android:textSize="12sp" />
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:text="Mémoire disponible:"
+                            android:textColor="@color/teal_700"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/tv_memAvailable"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:text="MemAvailable"
+                            android:textColor="@color/teal_700"
+                            android:textSize="12sp" />
+
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+                </ScrollView>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="240dp"
+                android:layout_height="match_parent">
+
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:text="CPU global:"
+                                android:textColor="@color/blue"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:id="@+id/tv_rateCPU"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:text="rateCPU"
+                                android:textColor="@color/blue"
+                                android:textSize="12sp" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:text="CPU0:"
+                                android:textColor="@color/black"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:id="@+id/tv_freqCPU0"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:text="freqCPU0"
+                                android:textColor="@color/black"
+                                android:textSize="12sp" />
+
+
+                            <TextView
+                                android:id="@+id/tv_rateCPU0"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:text="rateCPU0"
+                                android:textColor="@color/black"
+                                android:textSize="12sp" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:text="CPU1:"
+                                android:textColor="@color/yellow"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:id="@+id/tv_freqCPU1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:text="freqCPU1"
+                                android:textColor="@color/yellow"
+                                android:textSize="12sp" />
+
+
+                            <TextView
+                                android:id="@+id/tv_rateCPU1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:text="rateCPU1"
+                                android:textColor="@color/yellow"
+                                android:textSize="12sp" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:text="CPU2:"
+                                android:textColor="@color/purple_200"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:id="@+id/tv_freqCPU2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:text="freqCPU2"
+                                android:textColor="@color/purple_200"
+                                android:textSize="12sp" />
+
+
+                            <TextView
+                                android:id="@+id/tv_rateCPU2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:text="rateCPU2"
+                                android:textColor="@color/purple_200"
+                                android:textSize="12sp" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:text="CPU3:"
+                                android:textColor="@color/cpu3"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:id="@+id/tv_freqCPU3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:text="freqCPU3"
+                                android:textColor="@color/cpu3"
+                                android:textSize="12sp" />
+
+
+                            <TextView
+                                android:id="@+id/tv_rateCPU3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:text="rateCPU3"
+                                android:textColor="@color/cpu3"
+                                android:textSize="12sp" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:text="CPU4:"
+                                android:textColor="@color/cpu4"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:id="@+id/tv_freqCPU4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:text="freqCPU4"
+                                android:textColor="@color/cpu4"
+                                android:textSize="12sp" />
+
+
+                            <TextView
+                                android:id="@+id/tv_rateCPU4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:text="rateCPU4"
+                                android:textColor="@color/cpu4"
+                                android:textSize="12sp" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:text="CPU5:"
+                                android:textColor="@color/cpu5"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:id="@+id/tv_freqCPU5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:text="freqCPU5"
+                                android:textColor="@color/cpu5"
+                                android:textSize="12sp" />
+
+
+                            <TextView
+                                android:id="@+id/tv_rateCPU5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:text="rateCPU5"
+                                android:textColor="@color/cpu5"
+                                android:textSize="12sp" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:text="CPU6:"
+                                android:textColor="@color/cpu6"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:id="@+id/tv_freqCPU6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:text="freqCPU6"
+                                android:textColor="@color/cpu6"
+                                android:textSize="12sp" />
+
+
+                            <TextView
+                                android:id="@+id/tv_rateCPU6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:text="rateCPU6"
+                                android:textColor="@color/cpu6"
+                                android:textSize="12sp" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:text="CPU7:"
+                                android:textColor="@color/cpu7"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:id="@+id/tv_freqCPU7"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:text="freqCPU7"
+                                android:textColor="@color/cpu7"
+                                android:textSize="12sp" />
+
+
+                            <TextView
+                                android:id="@+id/tv_rateCPU7"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:text="rateCPU7"
+                                android:textColor="@color/cpu7"
+                                android:textSize="12sp" />
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </ScrollView>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:text="GPU:"
+                            android:textColor="@color/green"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/tv_rateGPU"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:text="rateGPU"
+                            android:textColor="@color/green"
+                            android:textSize="12sp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:text="Température CPU:"
+                            android:textColor="@color/red"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/tv_tempCPU"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:text="tempCPU"
+                            android:textColor="@color/red"
+                            android:textSize="12sp" />
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
